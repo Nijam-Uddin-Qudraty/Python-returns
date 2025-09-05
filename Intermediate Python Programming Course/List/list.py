@@ -1,4 +1,21 @@
 list = [1,2,3,4,5,6,7,8]
+
+# creating a list
+# -----------------------------------#
+a = []        # literal
+b = list()    # constructor
+squares = [i*i for i in range(5)] # list comprehension1
+zeros = [0] * 5      # [0, 0, 0, 0, 0]
+nested = [[0]*3] * 3 # watch out: shallow copy issue
+nums = list(range(1, 6)) # [1, 2, 3, 4, 5]
+nums = [*range(5)]       # [0, 1, 2, 3, 4]
+chars = [*'abc']         # ['a', 'b', 'c']
+
+# -----------------------------------#
+
+
+
+
 # slicing
 # [start : end]
 print(list[1:5]) # prints start index to end-1 index

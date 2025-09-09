@@ -7,7 +7,7 @@
 Tuple is immutable variable in python, which used store multiple item in single variable.
 but its values cannot be changed after creation.
 Generally it used when returning multiple values from function. and also used as key in dictionary.
-as the the dictinary keys must be immutable.
+as the the dictionary keys must be immutable.
 """
 # ***************************************#
 """

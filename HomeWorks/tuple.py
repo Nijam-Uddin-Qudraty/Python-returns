@@ -65,3 +65,15 @@ We are simply changing the value of the reference, isn't updating or changing di
 t = (1, [2, 3], 4)
 t[1][0] = 5
 print(t) # Output: (1, [5, 3], 4)
+
+# Write a Python program that takes a list of tuples (e.g., [("a", 1), ("b", 2)]) and converts it into a dictionary.
+#---------------------------------------#
+list_of_tuples = [("a", 1), ("b", 2)]
+dict_from_tuples = dict(list_of_tuples)
+print(dict_from_tuples)  # Output: {'a': 1, 'b': 2}
+
+# Given a nested tuple like ((1,2), (3,4), (5,6)), write a program to flatten it into a single tuple (1,2,3,4,5,6).
+#---------------------------------------#
+nested_tuple = ((1,2), (3,4), (5,6))
+new_tuple = tuple(j for i in nested_tuple for j in i)
+print(new_tuple)  # Output: (1, 2, 3, 4, 5, 6)

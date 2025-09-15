@@ -3,7 +3,7 @@
 # set is used to store unique values.we can't use indexing because its unordered.
 # if we add duplicate value it will ignore it and only store unique values.
 # we can't update its value but add value using add function
-# set itself mutable but we can't use immutable variable in it
+# set itself mutable but we can't use mutable variable in it
 """
 """
 # we can't create empty set using {} because it will create an empty dictionary

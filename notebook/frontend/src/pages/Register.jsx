@@ -1,10 +1,8 @@
 import React from 'react';
-
+import Form from '../components/Form';
 const Register = () => {
     return (
-        <div>
-            register
-        </div>
+        <Form method="register" route="api/user/register" />
     );
 };
 

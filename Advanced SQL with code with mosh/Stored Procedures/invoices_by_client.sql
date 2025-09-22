@@ -1,0 +1,14 @@
+DROP PROCEDURE IF EXISTS get_invoices_by_clients;
+
+
+-- WRITE STORE PROCEDURE TO RETURN INVOICES FOR A GIVEN CLIENT
+-- PARAM WILL BE CLIENT ID
+
+DELIMITER $$
+CREATE PROCEDURE get_invoices_by_clients(id int)
+BEGIN
+	SELECT *
+    FROM invoices
+    WHERE client_id = id;
+END $$
+DELIMITER ;
